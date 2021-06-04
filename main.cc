@@ -1,9 +1,9 @@
 #include <iostream>
-#include <arrow/api.h>
-#include <arrow/io/api.h>
-#include <parquet/arrow/reader.h>
-#include <parquet/arrow/writer.h>
-#include <parquet/exception.h>
+#include "arrow/api.h"
+#include "arrow/io/api.h"
+#include "parquet/arrow/reader.h"
+#include "parquet/arrow/writer.h"
+#include "parquet/exception.h"
 
 std::shared_ptr<arrow::Table> generate_table() {
   arrow::Int64Builder i64builder;
